@@ -17,6 +17,8 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('brand')->nullable();
             $table->unsignedInteger('category_id'); // Khóa ngoại, không dấu để liên kết với category_id
+            $table->integer('sold_quantity')->default(0);
+            $table->decimal('sale_price', 10, 2);
             $table->decimal('base_price', 10, 2);
             $table->string('image_url')->nullable();
             $table->timestamps(); // Tạo cột created_at và updated_at
