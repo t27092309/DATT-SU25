@@ -13,11 +13,11 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             CategorySeeder::class,
-            ProductSeeder::class,
+            ProductSeeder::class,         
             ProductVariantSeeder::class,
-            UserSeeder::class,           // UserSeeder giờ chứa cả admin roles
+            ProductImageSeeder::class,    
+            UserSeeder::class,
             UserAddressSeeder::class,
-            // Carts, Cart_Items, Orders, Order_Items, Payments (nếu bạn có seeder cho chúng)
         ]);
     }
 }

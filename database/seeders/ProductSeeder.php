@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Illuminate\Support\Str; // Import Str facade để tạo slug
 
 class ProductSeeder extends Seeder
 {
@@ -23,45 +24,49 @@ class ProductSeeder extends Seeder
         DB::table('products')->insert([
             [
                 'name' => 'Nike Air Max 270',
+                'slug' => Str::slug('Nike Air Max 270'), // Tự động tạo slug
                 'description' => 'Giày Nike Air Max 270 với đệm Air lớn mang lại sự êm ái tối đa.',
                 'brand' => 'Nike',
                 'category_id' => $categoryIdSneaker,
-                'sale_price' => 2000000.00,
                 'base_price' => 2800000.00,
-                'image_url' => 'https://example.com/nike_airmax.jpg',
+                'sale_price' => 2500000.00,
+                'sold_quantity' => 120,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             [
                 'name' => 'Adidas Ultraboost 22',
+                'slug' => Str::slug('Adidas Ultraboost 22'),
                 'description' => 'Adidas Ultraboost 22 mang lại năng lượng hoàn trả vượt trội cho mỗi bước chạy.',
                 'brand' => 'Adidas',
                 'category_id' => $categoryIdRunning,
-                'sale_price' => 3000000.00,
                 'base_price' => 3200000.00,
-                'image_url' => 'https://example.com/adidas_ultraboost.jpg',
+                'sale_price' => null,
+                'sold_quantity' => 85,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             [
                 'name' => 'Converse Chuck Taylor All Star',
+                'slug' => Str::slug('Converse Chuck Taylor All Star'),
                 'description' => 'Mẫu giày kinh điển, phong cách vượt thời gian.',
                 'brand' => 'Converse',
                 'category_id' => $categoryIdSneaker,
-                'sale_price' => 1000000.00,
                 'base_price' => 1200000.00,
-                'image_url' => 'https://example.com/converse_chuck.jpg',
+                'sale_price' => 1000000.00,
+                'sold_quantity' => 250,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],
             [
                 'name' => 'Timberland Premium Boot',
+                'slug' => Str::slug('Timberland Premium Boot'),
                 'description' => 'Giày bốt chống nước, bền bỉ và phong cách.',
                 'brand' => 'Timberland',
                 'category_id' => $categoryIdBoot,
-                'sale_price' => 4000000.00,
                 'base_price' => 4500000.00,
-                'image_url' => 'https://example.com/timberland_boot.jpg',
+                'sale_price' => null,
+                'sold_quantity' => 40,
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now(),
             ],

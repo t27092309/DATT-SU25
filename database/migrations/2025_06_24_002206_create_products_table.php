@@ -14,11 +14,12 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->increments('product_id'); // Khóa chính tự tăng
             $table->string('name');
+            $table->string('slug')->unique();
             $table->text('description')->nullable();
             $table->string('brand')->nullable();
             $table->unsignedInteger('category_id'); // Khóa ngoại, không dấu để liên kết với category_id
             $table->integer('sold_quantity')->default(0);
-            $table->decimal('sale_price', 10, 2);
+            $table->decimal('sale_price', 10, 2)->nullable();
             $table->decimal('base_price', 10, 2);
             $table->string('image_url')->nullable();
             $table->timestamps(); // Tạo cột created_at và updated_at
