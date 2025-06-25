@@ -171,36 +171,75 @@
                 </li>
 
                 {{-- Thêm liên kết đến CRUD danh mục của bạn --}}
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}"
-                        href="#categoriesSubmenu" data-bs-toggle="collapse" role="button"
-                        aria-expanded="{{ request()->routeIs('admin.categories.*') ? 'true' : 'false' }}"
-                        aria-controls="categoriesSubmenu">
-                        <i class="fa-solid fa-list-alt"></i>
-                        Danh mục
-                    </a>
-                    <div class="collapse sub-menu {{ request()->routeIs('admin.categories.*') ? 'show' : '' }}"
-                        id="categoriesSubmenu">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link {{ request()->routeIs('admin.categories.index') ? 'active' : '' }}"
-                                    href="{{ route('admin.categories.index') }}">
-                                    <i class="fa-solid fa-circle me-2" style="font-size: 0.5em;"></i>
-                                    Danh sách
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link {{ request()->routeIs('admin.categories.create') ? 'active' : '' }}"
-                                    href="{{ route('admin.categories.create') }}">
-                                    <i class="fa-solid fa-circle me-2" style="font-size: 0.5em;"></i>
-                                    Thêm mới
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+              {{-- Danh mục --}}
+<li class="nav-item">
+   <a href="{{ route('admin.categories.index') }}" class="nav-link dropdown-toggle">
+        <i class="fa-solid fa-list-alt"></i>
+        Danh mục
+    </a>
+    <div class="collapse sub-menu {{ request()->routeIs('admin.categories.*') ? 'show' : '' }}" id="categoriesSubmenu">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.categories.index') ? 'active' : '' }}"
+                    href="{{ route('admin.categories.index') }}">
+                    <i class="fa-solid fa-circle me-2" style="font-size: 0.5em;"></i> Danh sách
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.categories.create') ? 'active' : '' }}"
+                    href="{{ route('admin.categories.create') }}">
+                    <i class="fa-solid fa-circle me-2" style="font-size: 0.5em;"></i> Thêm mới
+                </a>
+            </li>
+        </ul>
+    </div>
+</li>
 
+{{-- Sản phẩm --}}
+<li class="nav-item">
+ <a href="{{ route('admin.products.index') }}" class="nav-link dropdown-toggle" > 
+   <i class="fa-solid fa-box"></i>  Sản Phẩm</a>
+ 
+    <div class="collapse sub-menu {{ request()->routeIs('admin.products.*') ? 'show' : '' }}" id="productsSubmenu">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.products.index') ? 'active' : '' }}"
+                    href="{{ route('admin.products.index') }}">
+                    <i class="fa-solid fa-circle me-2" style="font-size: 0.5em;"></i> Danh sách
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.products.create') ? 'active' : '' }}"
+                    href="{{ route('admin.products.create') }}">
+                    <i class="fa-solid fa-circle me-2" style="font-size: 0.5em;"></i> Thêm mới
+                </a>
+            </li>
+        </ul>
+    </div>
+</li>
 
+{{-- Biến thể sản phẩm products --}}
+<li class="nav-item">
+ <a href="{{ route('admin.variants.index') }}" class="nav-link dropdown-toggle" > 
+   <i class="fa-solid fa-box"></i>  Sản Phẩm Biến Thể</a>
+ 
+    <div class="collapse sub-menu {{ request()->routeIs('admin.variants.*') ? 'show' : '' }}" id="productsSubmenu">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.variants.index') ? 'active' : '' }}"
+                    href="{{ route('admin.variants.index') }}">
+                    <i class="fa-solid fa-circle me-2" style="font-size: 0.5em;"></i> Danh sách
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ request()->routeIs('admin.variants.create') ? 'active' : '' }}"
+                    href="{{ route('admin.variants.create') }}">
+                    <i class="fa-solid fa-circle me-2" style="font-size: 0.5em;"></i> Thêm mới
+                </a>
+            </li>
+        </ul>
+    </div>
+</li>
             </ul>
         </div>
 
@@ -367,7 +406,7 @@
         align-items: center;
         width: 100%;
     }
-    
+
 
     .main-content {
         flex-grow: 1;
