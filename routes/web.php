@@ -14,15 +14,20 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
     // Route categories đầy đủ (đã có sẵn)
     Route::resource('categories', CategoryController::class);
-    
+
 
     // Route resource cho products với chỉ index, create, edit
     Route::resource('products', ProductController::class)->only([
-        'index', 'create', 'edit','show','store','destroy','update'
+        'index',
+        'create',
+        'edit',
+        'show',
+        'store',
+        'destroy',
+        'update'
     ]);
 
-    
 
-Route::resource('variants', ProductVariantController::class);
 
+    Route::resource('variants', ProductVariantController::class);
 });
