@@ -36,6 +36,7 @@
     <link rel="apple-touch-icon" href="{{ asset('assets/images/cropped-48383776_2511245768892805_5554028974478196736_n-180x180.jpeg') }}">
 
     <style id="sober-custom-css-vars">:root{--topbar-height: 40px;--header-height: 68px;}</style>
+    @stack('styles')
 </head>
 
 <body class="home page-template page-template-elementor_header_footer page page-id-30293 theme-x woocommerce-js woo-variation-gallery woo-variation-gallery-theme-x woo-variation-gallery-pro sidebar-no-sidebar topbar-enabled topbar-light topbar-mobile-disabled header-v2 header-sticky header-sticky-normal header-white header-text-dark header-hoverable no-page-header page-header-style-normal page-title-hidden shop-hover-thumbnail product-quickview-enable blog-classic shop-navigation-links elementor-default elementor-template-full-width elementor-kit-92085 elementor-page elementor-page-30293 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
@@ -52,6 +53,6 @@
 
     </div><script src="{{ asset('assets/js/9ef240e8bb6f8ffb1b1a399d7794f3e5.js') }}" data-minify="1"></script>
     <script data-no-minify="1" async="" src="{{ asset('assets/js/lazyload.min.js') }}"></script>
-
+    @stack('scripts')
 </body>
 </html>
