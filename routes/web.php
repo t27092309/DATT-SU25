@@ -28,14 +28,7 @@ Route::middleware(['auth', CheckRole::class . ':admin'])->group(function () {
     });
 });
 
-// Customer route
-Route::middleware(['auth', CheckRole::class . ':customer'])->group(function () {
-    Route::get('/user/dashboard', function () {
-        return view('user.dashboard');
-    });
 
-    return view('home');
-});
 /*
 |--------------------------------------------------------------------------
 | Client (User) Routes
