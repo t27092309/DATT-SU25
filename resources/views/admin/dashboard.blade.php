@@ -1,3 +1,8 @@
+@extends('layouts.app')
+@section('content')
+<h2>Trang quản trị - Xin chào {{ Auth::user()->username }}</h2>
+@endsection
+
 @extends('layouts.admin') {{-- Đảm bảo bạn đã có layouts.admin.blade.php và nó hoạt động --}}
 
 @section('content')
@@ -15,3 +20,4 @@
         </div>
     </div>
 @endsection
+
