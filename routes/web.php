@@ -15,11 +15,12 @@ use App\Http\Controllers\Admin\ProductController as AdminProductController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\ProductVariantController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
 
-    return view('welcome');
-})->name('dashboard');
+
+Route::get('/', [HomeController::class, 'index']);
+
 
 // Admin route
 Route::middleware(['auth', CheckRole::class . ':admin'])->group(function () {
@@ -27,6 +28,7 @@ Route::middleware(['auth', CheckRole::class . ':admin'])->group(function () {
         return view('admin.dashboard');
     });
 });
+
 
 
 /*
