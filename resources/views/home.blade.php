@@ -113,19 +113,19 @@
 
                                         <li class="layout-style-2 col-md-4 col-sm-4 col-xs-6 col-lg-3 product-style-quickview product type-product post-78199 status-publish first instock product_cat-giay-nam product_cat-giay-nike product_cat-nike-jordan has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes woo-variation-gallery-product">
                                             <!-- Gắn link product detail để trỏ sang trang chi tiết -->
-                                            <div class="product-header"> <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img decoding="async" width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded" alt="" data-lazy-srcset="{{ $product->image }}" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons woocommerce-badges"><span class="onsale woocommerce-badge ribbon">35%</span></span></a>
+                                            <div class="product-header"> <a href="{{ route('product.detail', [$product->slug]) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img decoding="async" width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded" alt="" data-lazy-srcset="{{ $product->image }}" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons woocommerce-badges"><span class="onsale woocommerce-badge ribbon">35%</span></span></a>
 
                                                 <div class="buttons-icon">
                                                 </div>
                                                 <div class="buttons">
-                                                    <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/" data-quantity="1" class="button product_type_variable add_to_cart_button sober-loop-atc-button" data-product_id="{{ $product->id }}" data-product_sku="{{ $product->sku }}" aria-label="{{ $product->name }}" rel="nofollow">
+                                                    <a href="{{ route('product.detail', [$product->slug]) }}" data-quantity="1" class="button product_type_variable add_to_cart_button sober-loop-atc-button" data-product_id="{{ $product->id }}" data-product_sku="{{ $product->sku }}" aria-label="{{ $product->name }}" rel="nofollow">
                                                         <svg role="img" viewBox="0 0 20 20" width="20" height="20">
                                                             <use href="#basket-addtocart" xlink:href="#basket-addtocart"></use>
                                                         </svg>
                                                         <span class="screen-reader-text">Lựa chọn tùy chọn</span>
                                                     </a> <span id="woocommerce_loop_add_to_cart_link_describedby_78199" class="screen-reader-text">
                                                         Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm </span>
-                                                    <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/" class="quick_view_button button" data-product_id="78199"><svg role="img" viewBox="0 0 20 20" width="20" height="20">
+                                                    <a href="{{ route('product.detail', [$product->slug]) }}" class="quick_view_button button" data-product_id="78199"><svg role="img" viewBox="0 0 20 20" width="20" height="20">
                                                             <use href="#quickview-eye" xlink:href="#quickview-eye"></use>
                                                         </svg></a>
                                                 </div>
@@ -136,7 +136,7 @@
                                                     <div data-bg="{{ $product->image }}" class="wcvashopswatchlabel wcvasquare rocket-lazyload entered exited lazyloaded" style="background-size: cover; float: left; width: 40px; height: 40px; background-image: url(&quot;https://giayxshop.vn/wp-content/uploads/2023/11/z5490803329093_c996ec50b6b04958fdbc984bb3209c2b-150x150.jpg&quot;);" data-ll-status="loaded"></div>
                                                 </a>
                                             </div>
-                                            <h3 class="woocommerce-loop-product__title"><a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/">{{ $product->name }}</a></h3>
+                                            <h3 class="woocommerce-loop-product__title"><a href="{{ route('product.detail', [$product->slug]) }}">{{ $product->name }}</a></h3>
                                             <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">{{ $product->base_price }}<span class="woocommerce-Price-currencySymbol">₫</span></span></del> <span class="screen-reader-text">Giá gốc là: {{ $product->base_price }}₫.</span><ins aria-hidden="true"><span class="woocommerce-Price-amount amount">{{ $product->sale_price }}<span class="woocommerce-Price-currencySymbol">₫</span></span></ins><span class="screen-reader-text">Giá hiện tại là: {{ $product->sale_price }}₫.</span></span>
                                         </li>
                                         @endforeach
@@ -174,19 +174,19 @@
                                         @foreach ($bestSellers as $product)
                                         <li class="layout-style-2 col-md-4 col-sm-4 col-xs-6 col-lg-3 product-style-quickview product type-product post-78199 status-publish first instock product_cat-giay-nam product_cat-giay-nike product_cat-nike-jordan has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes woo-variation-gallery-product">
                                             <!-- Gắn link product detail để trỏ sang trang chi tiết -->
-                                            <div class="product-header"> <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img decoding="async" width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded" alt="" data-lazy-srcset="{{ $product->image }}" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons woocommerce-badges"><span class="onsale woocommerce-badge ribbon">35%</span></span></a>
+                                            <div class="product-header"> <a href="{{ route('product.detail', [$product->slug]) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img decoding="async" width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded" alt="" data-lazy-srcset="{{ $product->image }}" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons woocommerce-badges"><span class="onsale woocommerce-badge ribbon">35%</span></span></a>
 
                                                 <div class="buttons-icon">
                                                 </div>
                                                 <div class="buttons">
-                                                    <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/" data-quantity="1" class="button product_type_variable add_to_cart_button sober-loop-atc-button" data-product_id="{{ $product->id }}" data-product_sku="{{ $product->sku }}" aria-label="{{ $product->name }}" rel="nofollow">
+                                                    <a href="{{ route('product.detail', [$product->slug]) }}" data-quantity="1" class="button product_type_variable add_to_cart_button sober-loop-atc-button" data-product_id="{{ $product->id }}" data-product_sku="{{ $product->sku }}" aria-label="{{ $product->name }}" rel="nofollow">
                                                         <svg role="img" viewBox="0 0 20 20" width="20" height="20">
                                                             <use href="#basket-addtocart" xlink:href="#basket-addtocart"></use>
                                                         </svg>
                                                         <span class="screen-reader-text">Lựa chọn tùy chọn</span>
                                                     </a> <span id="woocommerce_loop_add_to_cart_link_describedby_78199" class="screen-reader-text">
                                                         Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm </span>
-                                                    <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/" class="quick_view_button button" data-product_id="78199"><svg role="img" viewBox="0 0 20 20" width="20" height="20">
+                                                    <a href="{{ route('product.detail', [$product->slug]) }}" class="quick_view_button button" data-product_id="78199"><svg role="img" viewBox="0 0 20 20" width="20" height="20">
                                                             <use href="#quickview-eye" xlink:href="#quickview-eye"></use>
                                                         </svg></a>
                                                 </div>
@@ -197,7 +197,7 @@
                                                     <div data-bg="{{ $product->image }}" class="wcvashopswatchlabel wcvasquare rocket-lazyload entered exited lazyloaded" style="background-size: cover; float: left; width: 40px; height: 40px; background-image: url(&quot;https://giayxshop.vn/wp-content/uploads/2023/11/z5490803329093_c996ec50b6b04958fdbc984bb3209c2b-150x150.jpg&quot;);" data-ll-status="loaded"></div>
                                                 </a>
                                             </div>
-                                            <h3 class="woocommerce-loop-product__title"><a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/">{{ $product->name }}</a></h3>
+                                            <h3 class="woocommerce-loop-product__title"><a href="{{ route('product.detail', [$product->slug]) }}">{{ $product->name }}</a></h3>
                                             <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">{{ $product->base_price }}<span class="woocommerce-Price-currencySymbol">₫</span></span></del> <span class="screen-reader-text">Giá gốc là: {{ $product->base_price }}₫.</span><ins aria-hidden="true"><span class="woocommerce-Price-amount amount">{{ $product->sale_price }}<span class="woocommerce-Price-currencySymbol">₫</span></span></ins><span class="screen-reader-text">Giá hiện tại là: {{ $product->sale_price }}₫.</span></span>
                                         </li>
                                         @endforeach

@@ -28,7 +28,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('dashboard') }}">Trang chủ</a>
+            <a class="navbar-brand" href="{{ route('home') }}">Trang chủ</a>
             @auth
                 <form method="POST" action="{{ route('logout') }}" class="ms-auto">
                     @csrf
