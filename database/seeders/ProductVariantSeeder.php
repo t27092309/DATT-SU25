@@ -2,38 +2,50 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
 class ProductVariantSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
-        $nikeAirMaxId = DB::table('products')->where('name', 'Nike Air Max 270')->first()->product_id;
-        $adidasUltraboostId = DB::table('products')->where('name', 'Adidas Ultraboost 22')->first()->product_id;
-        $converseChuckId = DB::table('products')->where('name', 'Converse Chuck Taylor All Star')->first()->product_id;
-        $timberlandBootId = DB::table('products')->where('name', 'Timberland Premium Boot')->first()->product_id;
+        $products = DB::table('products')->pluck('product_id', 'name');
 
-        DB::table('product_variants')->insert([
+        if ($products->isEmpty()) {
+            $this->command->warn('Chưa có sản phẩm nào trong bảng products, vui lòng seed ProductSeeder trước.');
+            return;
+        }
+
+        $variants = [
             // Nike Air Max 270
-            ['product_id' => $nikeAirMaxId, 'color' => 'Trắng', 'size' => '39', 'stock_quantity' => 10, 'price_modifier' => 0.00],
-            ['product_id' => $nikeAirMaxId, 'color' => 'Trắng', 'size' => '40', 'stock_quantity' => 15, 'price_modifier' => 0.00],
-            ['product_id' => $nikeAirMaxId, 'color' => 'Đen', 'size' => '41', 'stock_quantity' => 8, 'price_modifier' => 0.00],
+            ['product' => 'Nike Air Max 270', 'color' => 'Trắng', 'size' => '39', 'stock_quantity' => 10, 'price_modifier' => 0],
+            ['product' => 'Nike Air Max 270', 'color' => 'Trắng', 'size' => '40', 'stock_quantity' => 15, 'price_modifier' => 0],
+            ['product' => 'Nike Air Max 270', 'color' => 'Đen', 'size' => '41', 'stock_quantity' => 8, 'price_modifier' => 0],
 
             // Adidas Ultraboost 22
-            ['product_id' => $adidasUltraboostId, 'color' => 'Đen', 'size' => '40.5', 'stock_quantity' => 12, 'price_modifier' => 0.00],
-            ['product_id' => $adidasUltraboostId, 'color' => 'Xám', 'size' => '42', 'stock_quantity' => 7, 'price_modifier' => 100000.00], // Ví dụ có tăng giá
+            ['product' => 'Adidas Ultraboost 22', 'color' => 'Đen', 'size' => '40.5', 'stock_quantity' => 12, 'price_modifier' => 0],
+            ['product' => 'Adidas Ultraboost 22', 'color' => 'Xám', 'size' => '42', 'stock_quantity' => 7, 'price_modifier' => 100000],
 
             // Converse Chuck Taylor All Star
-            ['product_id' => $converseChuckId, 'color' => 'Trắng', 'size' => '37', 'stock_quantity' => 20, 'price_modifier' => 0.00],
-            ['product_id' => $converseChuckId, 'color' => 'Đen', 'size' => '38', 'stock_quantity' => 25, 'price_modifier' => 0.00],
+            ['product' => 'Converse Chuck Taylor All Star', 'color' => 'Trắng', 'size' => '37', 'stock_quantity' => 20, 'price_modifier' => 0],
+            ['product' => 'Converse Chuck Taylor All Star', 'color' => 'Đen', 'size' => '38', 'stock_quantity' => 25, 'price_modifier' => 0],
 
             // Timberland Premium Boot
-            ['product_id' => $timberlandBootId, 'color' => 'Nâu', 'size' => '42', 'stock_quantity' => 5, 'price_modifier' => 0.00],
-        ]);
+            ['product' => 'Timberland Premium Boot', 'color' => 'Nâu', 'size' => '42', 'stock_quantity' => 5, 'price_modifier' => 0],
+        ];
+
+        foreach ($variants as $variant) {
+            $productId = $products[$variant['product']] ?? null;
+            if ($productId) {
+                DB::table('product_variants')->insert([
+                    'product_id' => $productId,
+                    'color' => $variant['color'],
+                    'size' => $variant['size'],
+                    'stock_quantity' => $variant['stock_quantity'],
+                    'price_modifier' => $variant['price_modifier'],
+                    'image_url_specific' => null
+                ]);
+            }
+        }
     }
 }

@@ -4,6 +4,11 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CartController;
 use App\Http\Middleware\CheckRole;
+use App\Http\Controllers\Admin\ProductController as AdminProductController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\ProductVariantController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
@@ -22,9 +27,9 @@ Route::post('/cart/remove/{key}', [CartController::class, 'remove'])->name('cart
 // Checkout routes
 Route::post('/checkout', [CheckoutController::class, 'checkout'])->name('checkout');
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('dashboard');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
 
 // Admin route
 Route::middleware(['auth', CheckRole::class . ':admin'])->group(function () {
@@ -33,9 +38,40 @@ Route::middleware(['auth', CheckRole::class . ':admin'])->group(function () {
     });
 });
 
-// Customer route
-Route::middleware(['auth', CheckRole::class . ':customer'])->group(function () {
-    Route::get('/user/dashboard', function () {
-        return view('user.dashboard');
-    });
+
+
+/*
+|--------------------------------------------------------------------------
+| Client (User) Routes
+|--------------------------------------------------------------------------
+*/
+// Đặt route chi tiết sản phẩm ở đây
+Route::get('/san-pham/{product:slug}', [ProductController::class, 'show'])->name('product.detail');
+
+/*
+|--------------------------------------------------------------------------
+| Admin Routes
+|--------------------------------------------------------------------------
+*/
+Route::prefix('admin')->name('admin.')->group(function () {
+
+    // Route categories đầy đủ (đã có sẵn)
+    Route::resource('categories', CategoryController::class);
+
+
+    // Route resource cho products với chỉ index, create, edit
+    Route::resource('products', AdminProductController::class)->only([
+        'index',
+        'create',
+        'edit',
+        'show',
+        'store',
+        'destroy',
+        'update'
+    ]);
+
+
+
+    Route::resource('variants', ProductVariantController::class);
+
 });
