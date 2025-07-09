@@ -14,39 +14,42 @@
             </div>
         @endif
 
-<div class="bg-white p-3 rounded shadow-sm"> {{-- bg-white: nền trắng, p-3: padding, rounded: bo góc, shadow-sm: shadow nhỏ --}}
-        @if ($categories->isEmpty())
-            <p class="text-dark">Chưa có danh mục nào.</p> {{-- Đảm bảo chữ tối trên nền trắng --}}
-        @else
-            <div class="table-responsive">
-                {{-- Bảng không cần class bg-dark, text-white nữa vì đã có wrapper xử lý nền trắng --}}
-                <table class="table text-dark"> {{-- Giữ text-dark hoặc dùng CSS tùy chỉnh --}}
-                    <thead>
-                        <tr>
-                            <th scope="col">#ID</th>
-                            <th scope="col">Tên Danh mục</th>
-                            <th scope="col">Hành động</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($categories as $category)
-                        <tr>
-                            <td class="align-middle">{{ $category->category_id }}</td>
-                            <td class="align-middle">{{ $category->name }}</td>
-                            <td class="align-middle">
-                                <a href="{{ route('admin.categories.edit', $category->category_id) }}" class="btn btn-sm btn-warning me-2">Sửa</a>
-                                <form action="{{ route('admin.categories.destroy', $category->category_id) }}" method="POST" class="d-inline">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa danh mục này?');">Xóa</button>
-                                </form>
-                            </td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-        @endif
-    </div>
+        <div class="bg-white p-3 rounded shadow-sm"> {{-- bg-white: nền trắng, p-3: padding, rounded: bo góc, shadow-sm: shadow nhỏ --}}
+            @if ($categories->isEmpty())
+                <p class="text-dark">Chưa có danh mục nào.</p> {{-- Đảm bảo chữ tối trên nền trắng --}}
+            @else
+                <div class="table-responsive">
+                    {{-- Bảng không cần class bg-dark, text-white nữa vì đã có wrapper xử lý nền trắng --}}
+                    <table class="table text-dark"> {{-- Giữ text-dark hoặc dùng CSS tùy chỉnh --}}
+                        <thead>
+                            <tr>
+                                <th scope="col">#ID</th>
+                                <th scope="col">Tên Danh mục</th>
+                                <th scope="col">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($categories as $category)
+                                <tr>
+                                    <td class="align-middle">{{ $category->category_id }}</td>
+                                    <td class="align-middle">{{ $category->name }}</td>
+                                    <td class="align-middle">
+                                        <a href="{{ route('admin.categories.edit', $category->category_id) }}"
+                                            class="btn btn-sm btn-warning me-2">Sửa</a>
+                                        <form action="{{ route('admin.categories.destroy', $category->category_id) }}"
+                                            method="POST" class="d-inline">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-sm btn-danger"
+                                                onclick="return confirm('Bạn có chắc chắn muốn xóa danh mục này?');">Xóa</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            @endif
+        </div>
     </div>
 @endsection

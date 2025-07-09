@@ -12,7 +12,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GIÀY XSHOP – Hệ thống giày thể thao số 1 Hà Nội</title>
-
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link data-minify="1" rel="stylesheet" id="dwas_styles-css" href="{{ asset('assets/css/devvn_dwas_style.css') }}" type="text/css" media="all">
     <link data-minify="1" rel="stylesheet" id="wcva-shop-frontend-css" href="{{ asset('assets/css/shop-frontend.css') }}" type="text/css" media="all">
     <link data-minify="1" rel="stylesheet" id="woocommerce-general-css" href="{{ asset('assets/css/woocommerce.css') }}" type="text/css" media="all">

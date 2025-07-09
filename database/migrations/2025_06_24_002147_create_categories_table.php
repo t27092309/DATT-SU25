@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('category_id'); // Khóa chính tự tăng
             $table->string('name')->unique(); // Tên danh mục, phải là duy nhất
+            $table->string('slug')->unique();
         });
     }
 
