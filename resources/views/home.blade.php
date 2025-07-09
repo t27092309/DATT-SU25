@@ -74,270 +74,140 @@
 
             {{-- Hot Products Section and others --}}
 
-            <!-- sản phẩm mới -->
-            <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-57d1c766 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                data-id="57d1c766" data-element_type="section">
-                <div class="elementor-container elementor-column-gap-default">
-                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7c81d437"
-                        data-id="7c81d437" data-element_type="column">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-10bfe66d elementor-headline--style-rotate elementor-widget elementor-widget-animated-headline"
-                                data-id="10bfe66d" data-element_type="widget"
-                                data-settings="{&quot;rotating_text&quot;:&quot;HOT NH\u1ea4T&quot;,&quot;_animation&quot;:&quot;none&quot;,&quot;headline_style&quot;:&quot;rotate&quot;,&quot;animation_type&quot;:&quot;wave&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;rotate_iteration_delay&quot;:2500}"
-                                data-widget_type="animated-headline.default">
-                                <div class="elementor-widget-container">
-                                    <h3
-                                        class="elementor-headline elementor-headline-animation-type-wave elementor-headline-letters">
-                                        <span class="elementor-headline-plain-text elementor-headline-text-wrapper">HÀNG
-                                            MỚI</span>
-                                        <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper"
-                                            style="width: 221.25px;">
-                                            <span class="elementor-headline-dynamic-text elementor-headline-text-active"
-                                                style="opacity: 1;"><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">
-                                                </span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">
-                                                </span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">
-                                                </span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">
-                                                </span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">
-                                                </span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">H</span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">O</span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">T</span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">&nbsp;</span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">N</span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">H</span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">Ấ</span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">T</span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">
-                                                </span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">
-                                                </span><span
-                                                    class="elementor-headline-dynamic-letter elementor-headline-animation-in">
-                                                </span></span>
-                                        </span>
-                                    </h3>
-                                </div>
+        <!-- sản phẩm mới -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-57d1c766 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="57d1c766" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7c81d437" data-id="7c81d437" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-10bfe66d elementor-headline--style-rotate elementor-widget elementor-widget-animated-headline" data-id="10bfe66d" data-element_type="widget" data-settings="{&quot;rotating_text&quot;:&quot;HOT NH\u1ea4T&quot;,&quot;_animation&quot;:&quot;none&quot;,&quot;headline_style&quot;:&quot;rotate&quot;,&quot;animation_type&quot;:&quot;wave&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;rotate_iteration_delay&quot;:2500}" data-widget_type="animated-headline.default">
+                            <div class="elementor-widget-container">
+                                <h3 class="elementor-headline elementor-headline-animation-type-wave elementor-headline-letters">
+                                    <span class="elementor-headline-plain-text elementor-headline-text-wrapper">HÀNG MỚI</span>
+                                    <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper" style="width: 221.25px;">
+                                        <span class="elementor-headline-dynamic-text elementor-headline-text-active" style="opacity: 1;"><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">
+                                            </span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in"> </span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in"> </span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in"> </span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in"> </span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">H</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">O</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">T</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">&nbsp;</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">N</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">H</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">Ấ</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in">T</span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in"> </span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in"> </span><span class="elementor-headline-dynamic-letter elementor-headline-animation-in"> </span></span>
+                                    </span>
+                                </h3>
                             </div>
-                            <div class="elementor-element elementor-element-4a8dd007 elementor-grid-tablet-3 elementor-grid-mobile-2 elementor-grid-4 elementor-products-grid elementor-wc-products elementor-widget elementor-widget-woocommerce-products"
-                                data-id="4a8dd007" data-element_type="widget"
-                                data-widget_type="woocommerce-products.default">
-                                <div class="elementor-widget-container">
-                                    <div class="woocommerce flex columns-4 ">
-                                        <ul class="products elementor-grid columns-4">
-                                            @foreach ($newProducts as $product)
-                                                <li
-                                                    class="layout-style-2 col-md-4 col-sm-4 col-xs-6 col-lg-3 product-style-quickview product type-product post-78199 status-publish first instock product_cat-giay-nam product_cat-giay-nike product_cat-nike-jordan has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes woo-variation-gallery-product">
-                                                    <!-- Gắn link product detail để trỏ sang trang chi tiết -->
-                                                    <div class="product-header"> <a
-                                                            href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/"
-                                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img
-                                                                decoding="async" width="300" height="300"
-                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded"
-                                                                alt="" data-lazy-srcset="{{ $product->image }}"
-                                                                sizes="(max-width: 300px) 100vw, 300px" /></noscript><span
-                                                                class="ribbons woocommerce-badges"><span
-                                                                    class="onsale woocommerce-badge ribbon">35%</span></span></a>
+                        </div>
+                        <div class="elementor-element elementor-element-4a8dd007 elementor-grid-tablet-3 elementor-grid-mobile-2 elementor-grid-4 elementor-products-grid elementor-wc-products elementor-widget elementor-widget-woocommerce-products" data-id="4a8dd007" data-element_type="widget" data-widget_type="woocommerce-products.default">
+                            <div class="elementor-widget-container">
+                                <div class="woocommerce flex columns-4 ">
+                                    <ul class="products elementor-grid columns-4">
+                                        @foreach ($newProducts as $product)
 
-                                                        <div class="buttons-icon">
-                                                        </div>
-                                                        <div class="buttons">
-                                                            <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/"
-                                                                data-quantity="1"
-                                                                class="button product_type_variable add_to_cart_button sober-loop-atc-button"
-                                                                data-product_id="{{ $product->id }}"
-                                                                data-product_sku="{{ $product->sku }}"
-                                                                aria-label="{{ $product->name }}" rel="nofollow">
-                                                                <svg role="img" viewBox="0 0 20 20" width="20"
-                                                                    height="20">
-                                                                    <use href="#basket-addtocart"
-                                                                        xlink:href="#basket-addtocart"></use>
-                                                                </svg>
-                                                                <span class="screen-reader-text">Lựa chọn tùy chọn</span>
-                                                            </a> <span
-                                                                id="woocommerce_loop_add_to_cart_link_describedby_78199"
-                                                                class="screen-reader-text">
-                                                                Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được
-                                                                chọn trên trang sản phẩm </span>
-                                                            <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/"
-                                                                class="quick_view_button button"
-                                                                data-product_id="78199"><svg role="img"
-                                                                    viewBox="0 0 20 20" width="20" height="20">
-                                                                    <use href="#quickview-eye"
-                                                                        xlink:href="#quickview-eye"></use>
-                                                                </svg></a>
-                                                        </div>
-                                                    </div>
-                                                    <!-- thông tin sản phẩm -->
-                                                    <div class="shopswatchinput" prod-img="">
-                                                        <a class="wcvaswatchinput" data-o-src="{{ $product->image }}">
-                                                            <div data-bg="{{ $product->image }}"
-                                                                class="wcvashopswatchlabel wcvasquare rocket-lazyload entered exited lazyloaded"
-                                                                style="background-size: cover; float: left; width: 40px; height: 40px; background-image: url(&quot;https://giayxshop.vn/wp-content/uploads/2023/11/z5490803329093_c996ec50b6b04958fdbc984bb3209c2b-150x150.jpg&quot;);"
-                                                                data-ll-status="loaded"></div>
-                                                        </a>
-                                                    </div>
-                                                    <h3 class="woocommerce-loop-product__title"><a
-                                                            href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/">{{ $product->name }}</a>
-                                                    </h3>
-                                                    <span class="price"><del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount">{{ $product->base_price }}<span
-                                                                    class="woocommerce-Price-currencySymbol">₫</span></span></del>
-                                                        <span class="screen-reader-text">Giá gốc là:
-                                                            {{ $product->base_price }}₫.</span><ins
-                                                            aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount">{{ $product->sale_price }}<span
-                                                                    class="woocommerce-Price-currencySymbol">₫</span></span></ins><span
-                                                            class="screen-reader-text">Giá hiện tại là:
-                                                            {{ $product->sale_price }}₫.</span></span>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
+                                        <li class="layout-style-2 col-md-4 col-sm-4 col-xs-6 col-lg-3 product-style-quickview product type-product post-78199 status-publish first instock product_cat-giay-nam product_cat-giay-nike product_cat-nike-jordan has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes woo-variation-gallery-product">
+                                            <!-- Gắn link product detail để trỏ sang trang chi tiết -->
+                                            <div class="product-header"> <a href="{{ route('product.detail', [$product->slug]) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img decoding="async" width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded" alt="" data-lazy-srcset="{{ $product->image }}" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons woocommerce-badges"><span class="onsale woocommerce-badge ribbon">35%</span></span></a>
+
+                                                <div class="buttons-icon">
+                                                </div>
+                                                <div class="buttons">
+                                                    <a href="{{ route('product.detail', [$product->slug]) }}" data-quantity="1" class="button product_type_variable add_to_cart_button sober-loop-atc-button" data-product_id="{{ $product->id }}" data-product_sku="{{ $product->sku }}" aria-label="{{ $product->name }}" rel="nofollow">
+                                                        <svg role="img" viewBox="0 0 20 20" width="20" height="20">
+                                                            <use href="#basket-addtocart" xlink:href="#basket-addtocart"></use>
+                                                        </svg>
+                                                        <span class="screen-reader-text">Lựa chọn tùy chọn</span>
+                                                    </a> <span id="woocommerce_loop_add_to_cart_link_describedby_78199" class="screen-reader-text">
+                                                        Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm </span>
+                                                    <a href="{{ route('product.detail', [$product->slug]) }}" class="quick_view_button button" data-product_id="78199"><svg role="img" viewBox="0 0 20 20" width="20" height="20">
+                                                            <use href="#quickview-eye" xlink:href="#quickview-eye"></use>
+                                                        </svg></a>
+                                                </div>
+                                            </div>
+                                            <!-- thông tin sản phẩm -->
+                                            <div class="shopswatchinput" prod-img="">
+                                                <a class="wcvaswatchinput" data-o-src="{{ $product->image }}">
+                                                    <div data-bg="{{ $product->image }}" class="wcvashopswatchlabel wcvasquare rocket-lazyload entered exited lazyloaded" style="background-size: cover; float: left; width: 40px; height: 40px; background-image: url(&quot;https://giayxshop.vn/wp-content/uploads/2023/11/z5490803329093_c996ec50b6b04958fdbc984bb3209c2b-150x150.jpg&quot;);" data-ll-status="loaded"></div>
+                                                </a>
+                                            </div>
+                                            <h3 class="woocommerce-loop-product__title"><a href="{{ route('product.detail', [$product->slug]) }}">{{ $product->name }}</a></h3>
+                                            <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">{{ $product->base_price }}<span class="woocommerce-Price-currencySymbol">₫</span></span></del> <span class="screen-reader-text">Giá gốc là: {{ $product->base_price }}₫.</span><ins aria-hidden="true"><span class="woocommerce-Price-amount amount">{{ $product->sale_price }}<span class="woocommerce-Price-currencySymbol">₫</span></span></ins><span class="screen-reader-text">Giá hiện tại là: {{ $product->sale_price }}₫.</span></span>
+                                        </li>
+                                        @endforeach
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        
+        <!-- sản phẩm bán chạy -->
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-56958ac7 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="56958ac7" data-element_type="section">
+            <div class="elementor-container elementor-column-gap-default">
+                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-243a383" data-id="243a383" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-6573395b elementor-headline--style-rotate elementor-widget elementor-widget-animated-headline animated fadeInDown" data-id="6573395b" data-element_type="widget" data-settings="{&quot;rotating_text&quot;:&quot;B\u00c1N CH\u1ea0Y\nDEAL NGON&quot;,&quot;animation_type&quot;:&quot;clip&quot;,&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;headline_style&quot;:&quot;rotate&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;rotate_iteration_delay&quot;:2500}" data-widget_type="animated-headline.default">
+                            <div class="elementor-widget-container">
+                                <h3 class="elementor-headline elementor-headline-animation-type-clip">
+                                    <span class="elementor-headline-plain-text elementor-headline-text-wrapper">Sản Phẩm</span>
+                                    <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper" style="width: 180.606px; overflow: hidden;">
+                                        <span class="elementor-headline-dynamic-text elementor-headline-text-active">
+                                            BÁN&nbsp;CHẠY </span>
+                                        <span class="elementor-headline-dynamic-text elementor-headline-text-inactive">
+                                            DEAL&nbsp;NGON </span>
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-692cb885 elementor-grid-tablet-3 elementor-grid-mobile-2 elementor-product-loop-item--align-center elementor-grid-4 elementor-products-grid elementor-wc-products elementor-widget elementor-widget-woocommerce-products" data-id="692cb885" data-element_type="widget" data-widget_type="woocommerce-products.default">
+                            <div class="elementor-widget-container">
+                                <div class="woocommerce columns-4 ">
+                                    <ul class="products elementor-grid columns-4">
+                                        @foreach ($bestSellers as $product)
+                                        <li class="layout-style-2 col-md-4 col-sm-4 col-xs-6 col-lg-3 product-style-quickview product type-product post-78199 status-publish first instock product_cat-giay-nam product_cat-giay-nike product_cat-nike-jordan has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes woo-variation-gallery-product">
+                                            <!-- Gắn link product detail để trỏ sang trang chi tiết -->
+                                            <div class="product-header"> <a href="{{ route('product.detail', [$product->slug]) }}" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img decoding="async" width="300" height="300" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded" alt="" data-lazy-srcset="{{ $product->image }}" sizes="(max-width: 300px) 100vw, 300px" /></noscript><span class="ribbons woocommerce-badges"><span class="onsale woocommerce-badge ribbon">35%</span></span></a>
 
-            <!-- sản phẩm bán chạy -->
-            <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-56958ac7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                data-id="56958ac7" data-element_type="section">
-                <div class="elementor-container elementor-column-gap-default">
-                    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-243a383"
-                        data-id="243a383" data-element_type="column">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-6573395b elementor-headline--style-rotate elementor-widget elementor-widget-animated-headline animated fadeInDown"
-                                data-id="6573395b" data-element_type="widget"
-                                data-settings="{&quot;rotating_text&quot;:&quot;B\u00c1N CH\u1ea0Y\nDEAL NGON&quot;,&quot;animation_type&quot;:&quot;clip&quot;,&quot;_animation&quot;:&quot;fadeInDown&quot;,&quot;headline_style&quot;:&quot;rotate&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;rotate_iteration_delay&quot;:2500}"
-                                data-widget_type="animated-headline.default">
-                                <div class="elementor-widget-container">
-                                    <h3 class="elementor-headline elementor-headline-animation-type-clip">
-                                        <span class="elementor-headline-plain-text elementor-headline-text-wrapper">Sản
-                                            Phẩm</span>
-                                        <span class="elementor-headline-dynamic-wrapper elementor-headline-text-wrapper"
-                                            style="width: 180.606px; overflow: hidden;">
-                                            <span class="elementor-headline-dynamic-text elementor-headline-text-active">
-                                                BÁN&nbsp;CHẠY </span>
-                                            <span class="elementor-headline-dynamic-text elementor-headline-text-inactive">
-                                                DEAL&nbsp;NGON </span>
-                                        </span>
-                                    </h3>
+                                                <div class="buttons-icon">
+                                                </div>
+                                                <div class="buttons">
+                                                    <a href="{{ route('product.detail', [$product->slug]) }}" data-quantity="1" class="button product_type_variable add_to_cart_button sober-loop-atc-button" data-product_id="{{ $product->id }}" data-product_sku="{{ $product->sku }}" aria-label="{{ $product->name }}" rel="nofollow">
+                                                        <svg role="img" viewBox="0 0 20 20" width="20" height="20">
+                                                            <use href="#basket-addtocart" xlink:href="#basket-addtocart"></use>
+                                                        </svg>
+                                                        <span class="screen-reader-text">Lựa chọn tùy chọn</span>
+                                                    </a> <span id="woocommerce_loop_add_to_cart_link_describedby_78199" class="screen-reader-text">
+                                                        Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được chọn trên trang sản phẩm </span>
+                                                    <a href="{{ route('product.detail', [$product->slug]) }}" class="quick_view_button button" data-product_id="78199"><svg role="img" viewBox="0 0 20 20" width="20" height="20">
+                                                            <use href="#quickview-eye" xlink:href="#quickview-eye"></use>
+                                                        </svg></a>
+                                                </div>
+                                            </div>
+                                            <!-- thông tin sản phẩm -->
+                                            <div class="shopswatchinput" prod-img="">
+                                                <a class="wcvaswatchinput" data-o-src="{{ $product->image }}">
+                                                    <div data-bg="{{ $product->image }}" class="wcvashopswatchlabel wcvasquare rocket-lazyload entered exited lazyloaded" style="background-size: cover; float: left; width: 40px; height: 40px; background-image: url(&quot;https://giayxshop.vn/wp-content/uploads/2023/11/z5490803329093_c996ec50b6b04958fdbc984bb3209c2b-150x150.jpg&quot;);" data-ll-status="loaded"></div>
+                                                </a>
+                                            </div>
+                                            <h3 class="woocommerce-loop-product__title"><a href="{{ route('product.detail', [$product->slug]) }}">{{ $product->name }}</a></h3>
+                                            <span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount">{{ $product->base_price }}<span class="woocommerce-Price-currencySymbol">₫</span></span></del> <span class="screen-reader-text">Giá gốc là: {{ $product->base_price }}₫.</span><ins aria-hidden="true"><span class="woocommerce-Price-amount amount">{{ $product->sale_price }}<span class="woocommerce-Price-currencySymbol">₫</span></span></ins><span class="screen-reader-text">Giá hiện tại là: {{ $product->sale_price }}₫.</span></span>
+                                        </li>
+                                        @endforeach
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="elementor-element elementor-element-692cb885 elementor-grid-tablet-3 elementor-grid-mobile-2 elementor-product-loop-item--align-center elementor-grid-4 elementor-products-grid elementor-wc-products elementor-widget elementor-widget-woocommerce-products"
-                                data-id="692cb885" data-element_type="widget"
-                                data-widget_type="woocommerce-products.default">
-                                <div class="elementor-widget-container">
-                                    <div class="woocommerce columns-4 ">
-                                        <ul class="products elementor-grid columns-4">
-                                            @foreach ($bestSellers as $product)
-                                                <li
-                                                    class="layout-style-2 col-md-4 col-sm-4 col-xs-6 col-lg-3 product-style-quickview product type-product post-78199 status-publish first instock product_cat-giay-nam product_cat-giay-nike product_cat-nike-jordan has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes woo-variation-gallery-product">
-                                                    <!-- Gắn link product detail để trỏ sang trang chi tiết -->
-                                                    <div class="product-header"> <a
-                                                            href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/"
-                                                            class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img
-                                                                decoding="async" width="300" height="300"
-                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded"
-                                                                alt="" data-lazy-srcset="{{ $product->image }}"
-                                                                sizes="(max-width: 300px) 100vw, 300px" /></noscript><span
-                                                                class="ribbons woocommerce-badges"><span
-                                                                    class="onsale woocommerce-badge ribbon">35%</span></span></a>
-
-                                                        <div class="buttons-icon">
-                                                        </div>
-                                                        <div class="buttons">
-                                                            <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/"
-                                                                data-quantity="1"
-                                                                class="button product_type_variable add_to_cart_button sober-loop-atc-button"
-                                                                data-product_id="{{ $product->id }}"
-                                                                data-product_sku="{{ $product->sku }}"
-                                                                aria-label="{{ $product->name }}" rel="nofollow">
-                                                                <svg role="img" viewBox="0 0 20 20" width="20"
-                                                                    height="20">
-                                                                    <use href="#basket-addtocart"
-                                                                        xlink:href="#basket-addtocart"></use>
-                                                                </svg>
-                                                                <span class="screen-reader-text">Lựa chọn tùy chọn</span>
-                                                            </a> <span
-                                                                id="woocommerce_loop_add_to_cart_link_describedby_78199"
-                                                                class="screen-reader-text">
-                                                                Sản phẩm này có nhiều biến thể. Các tùy chọn có thể được
-                                                                chọn trên trang sản phẩm </span>
-                                                            <a href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/"
-                                                                class="quick_view_button button"
-                                                                data-product_id="78199"><svg role="img"
-                                                                    viewBox="0 0 20 20" width="20" height="20">
-                                                                    <use href="#quickview-eye"
-                                                                        xlink:href="#quickview-eye"></use>
-                                                                </svg></a>
-                                                        </div>
-                                                    </div>
-                                                    <!-- thông tin sản phẩm -->
-                                                    <div class="shopswatchinput" prod-img="">
-                                                        <a class="wcvaswatchinput" data-o-src="{{ $product->image }}">
-                                                            <div data-bg="{{ $product->image }}"
-                                                                class="wcvashopswatchlabel wcvasquare rocket-lazyload entered exited lazyloaded"
-                                                                style="background-size: cover; float: left; width: 40px; height: 40px; background-image: url(&quot;https://giayxshop.vn/wp-content/uploads/2023/11/z5490803329093_c996ec50b6b04958fdbc984bb3209c2b-150x150.jpg&quot;);"
-                                                                data-ll-status="loaded"></div>
-                                                        </a>
-                                                    </div>
-                                                    <h3 class="woocommerce-loop-product__title"><a
-                                                            href="https://giayxshop.vn/san-pham/jordan-1-low-travis-scott-nau-kem-rep-11/">{{ $product->name }}</a>
-                                                    </h3>
-                                                    <span class="price"><del aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount">{{ $product->base_price }}<span
-                                                                    class="woocommerce-Price-currencySymbol">₫</span></span></del>
-                                                        <span class="screen-reader-text">Giá gốc là:
-                                                            {{ $product->base_price }}₫.</span><ins
-                                                            aria-hidden="true"><span
-                                                                class="woocommerce-Price-amount amount">{{ $product->sale_price }}<span
-                                                                    class="woocommerce-Price-currencySymbol">₫</span></span></ins><span
-                                                            class="screen-reader-text">Giá hiện tại là:
-                                                            {{ $product->sale_price }}₫.</span></span>
-                                                </li>
-                                            @endforeach
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-3bab206e elementor-widget elementor-widget-spacer"
-                                data-id="3bab206e" data-element_type="widget" data-widget_type="spacer.default">
-                                <div class="elementor-widget-container">
-                                    <div class="elementor-spacer">
-                                        <div class="elementor-spacer-inner"></div>
-                                    </div>
+                        </div>
+                        <div class="elementor-element elementor-element-3bab206e elementor-widget elementor-widget-spacer" data-id="3bab206e" data-element_type="widget" data-widget_type="spacer.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-spacer">
+                                    <div class="elementor-spacer-inner"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-5a852376 elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                data-id="5a852376" data-element_type="section"
-                data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
-                style="width: 960px; left: -120px;">
-                <div class="elementor-container elementor-column-gap-no">
-                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-36c54c6c"
-                        data-id="36c54c6c" data-element_type="column">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-25b70efe elementor-drop-cap-yes elementor-drop-cap-view-default elementor-widget elementor-widget-text-editor"
-                                data-id="25b70efe" data-element_type="widget"
-                                data-settings="{&quot;drop_cap&quot;:&quot;yes&quot;}"
-                                data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <div class="_2cuy _3dgx _2vxa">Hơn 10 năm phát triển, XSHOP luôn mang đến những mẫu
-                                        giày chất lượng tốt nhất với giá cả hợp lí nhất đến tay người tiêu dùng với hệ thống
-                                        cửa hàng Số 1 Hà Nội và bán online khắp Việt Nam.</div>
-                                </div>
+            </div>
+        </section>
+        <section class="elementor-section elementor-top-section elementor-element elementor-element-5a852376 elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5a852376" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 960px; left: -120px;">
+            <div class="elementor-container elementor-column-gap-no">
+                <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-36c54c6c" data-id="36c54c6c" data-element_type="column">
+                    <div class="elementor-widget-wrap elementor-element-populated">
+                        <div class="elementor-element elementor-element-25b70efe elementor-drop-cap-yes elementor-drop-cap-view-default elementor-widget elementor-widget-text-editor" data-id="25b70efe" data-element_type="widget" data-settings="{&quot;drop_cap&quot;:&quot;yes&quot;}" data-widget_type="text-editor.default">
+                            <div class="elementor-widget-container">
+                                <div class="_2cuy _3dgx _2vxa">Hơn 10 năm phát triển, XSHOP luôn mang đến những mẫu giày chất lượng tốt nhất với giá cả hợp lí nhất đến tay người tiêu dùng với hệ thống cửa hàng Số 1 Hà Nội và bán online khắp Việt Nam.</div>
                             </div>
                             <div class="elementor-element elementor-element-237901de elementor-widget elementor-widget-counter"
                                 data-id="237901de" data-element_type="widget" data-widget_type="counter.default">
