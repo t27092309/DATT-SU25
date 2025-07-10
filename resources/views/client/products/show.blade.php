@@ -51,7 +51,8 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
         }
 
-        .color-link::after {
+        /* Tắt tooltip màu nếu không cần hoặc muốn hiển thị khác */
+        /* .color-link::after {
             content: attr(data-color);
             position: absolute;
             bottom: -20px;
@@ -60,7 +61,7 @@
             font-size: 12px;
             color: #333;
             white-space: nowrap;
-        }
+        } */
 
         .size-selector {
             display: flex;
@@ -133,6 +134,26 @@
             font-size: 15px;
             outline: none;
         }
+
+        /* Alerts for success/error messages */
+        .alert {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-success {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+
+        .alert-danger {
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
     </style>
 @endpush
 
@@ -160,9 +181,24 @@
                         @endif
                     </p>
 
-                    <form class="cart" action="#" method="post">
+                    {{-- Display success/error messages --}}
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if (session('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
+                        </div>
+                    @endif
+
+                    {{-- FORM THÊM VÀO GIỎ HÀNG --}}
+                    <form class="cart" action="{{ route('cart.add') }}" method="post">
                         @csrf
-                        <input type="hidden" name="variant_id" id="selected_variant_id" value="">
+                        {{-- <input type="hidden" name="variant_id" id="selected_variant_id" value=""> --}}
+                        {{-- Loại bỏ input hidden vì giờ variant_id sẽ được gửi trực tiếp từ radio button --}}
 
                         {{-- Màu sắc --}}
                         <div class="variant-group">
@@ -186,29 +222,44 @@
                                 <div class="size-selector" id="size-selector-container">
                                     @foreach ($sizesForSelectedColor as $variant)
                                         <div class="radio-container">
+                                            {{-- Đặt name là variant_id để gửi trực tiếp --}}
                                             <input type="radio" name="variant_id" id="size_{{ $variant->variant_id }}"
                                                 value="{{ $variant->variant_id }}"
-                                                {{ $variant->stock_quantity <= 0 ? 'disabled' : '' }}>
+                                                {{ $variant->stock_quantity <= 0 ? 'disabled' : '' }}
+                                                {{-- Nếu có biến thể nào đó được chọn mặc định, bạn có thể thêm logic `checked` ở đây --}}>
                                             <label for="size_{{ $variant->variant_id }}"
-                                                class="size-label">{{ $variant->size }}</label>
+                                                class="size-label">{{ $variant->size }}
+                                                @if ($variant->stock_quantity <= 0)
+                                                    (Hết hàng)
+                                                @endif
+                                            </label>
                                         </div>
                                     @endforeach
                                 </div>
+                                @if (
+                                    $sizesForSelectedColor->where('stock_quantity', '>', 0)->isEmpty() &&
+                                        $sizesForSelectedColor->isNotEmpty())
+                                    <p class="text-danger mt-2">Tất cả các kích cỡ cho màu này hiện đang hết hàng.</p>
+                                @endif
                             </div>
+                        @else
+                            <p class="text-danger">Không có kích cỡ nào cho màu sắc đã chọn.</p>
                         @endif
 
                         {{-- Số lượng --}}
                         <div class="variant-group">
                             <label>Số lượng:</label>
                             <div class="quantity-wrapper">
-                                <button type="button" class="qty-btn" onclick="changeQty(-1)">−</button>
+                                {{-- Bỏ onclick và JavaScript để giảm số lượng --}}
                                 <input type="number" name="quantity" id="quantity-input" class="qty-input" value="1"
                                     min="1">
-                                <button type="button" class="qty-btn" onclick="changeQty(1)">+</button>
+                                {{-- Bỏ onclick và JavaScript để tăng số lượng --}}
                             </div>
+                            {{-- Bỏ thẻ small hiển thị tồn kho động --}}
                         </div>
 
-
+                        {{-- Nút "Thêm vào giỏ hàng" --}}
+                        {{-- Nút này sẽ luôn được bật, việc kiểm tra tồn kho và chọn variant_id sẽ do server xử lý --}}
                         <button type="submit" class="single_add_to_cart_button button alt">Thêm vào giỏ hàng</button>
                     </form>
 
@@ -222,13 +273,7 @@
 @endsection
 
 @push('scripts')
-    <script>
-        function changeQty(amount) {
-            const input = document.getElementById('quantity-input');
-            let current = parseInt(input.value) || 1;
-            current += amount;
-            if (current < 1) current = 1;
-            input.value = current;
-        }
-    </script>
+    {{-- Xóa toàn bộ khối JavaScript nếu bạn không muốn bất kỳ JS nào --}}
+    {{-- Nếu bạn muốn giữ lại các hàm JS chung khác không liên quan đến việc chọn biến thể,
+         thì hãy giữ chúng ở đây. Ví dụ như hàm gallery ảnh nếu có. --}}
 @endpush

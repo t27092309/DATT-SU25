@@ -1,99 +1,141 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-
     <meta charset="UTF-8">
-    <title>Laravel Auth</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-</head>
-<style>
-    body {
-        background: linear-gradient(to right, #e9f0f9, #f3f8ff);
-        min-height: 100vh;
-    }
-
-    .card {
-        margin-top: 50px;
-        border-radius: 1rem;
-    }
-
-    .form-control:focus {
-        border-color: #0d6efd;
-        box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
-    }
-</style>
-
-<body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">Trang chủ</a>
-            @auth
-                <form method="POST" action="{{ route('logout') }}" class="ms-auto">
-                    @csrf
-                    <button class="btn btn-danger">Đăng xuất</button>
-                </form>
-            @endauth
-        </div>
-    </nav>
-    <div class="container mt-4">
-        @yield('content')
-    </div>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script async="" src="{{ asset('assets/js/js') }}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-N5K4FJFXWR');
-    </script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GIÀY XSHOP – Hệ thống giày thể thao số 1 Hà Nội</title>
+
+    {{-- ChatBot --}}
+    <script src="https://cdn.botpress.cloud/webchat/v3.1/inject.js" defer></script>
+    <script src="https://files.bpcontent.cloud/2025/07/10/13/20250710134627-JSZDVXDE.js" defer></script>
+
+    {{-- Favicon và Apple Touch Icon --}}
+    <link rel="icon"
+        href="{{ asset('assets/images/cropped-48383776_2511245768892805_5554028974478196736_n-32x32.jpeg') }}"
+        sizes="32x32">
+    <link rel="apple-touch-icon"
+        href="{{ asset('assets/images/cropped-48383776_2511245768892805_5554028974478196736_n-180x180.jpeg') }}">
+
+    {{-- Các CSS files của bạn --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link data-minify="1" rel="stylesheet" id="dwas_styles-css" href="{{ asset('assets/css/devvn_dwas_style.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="wcva-shop-frontend-css" href="{{ asset('assets/css/shop-frontend.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="woocommerce-general-css" href="{{ asset('assets/css/woocommerce.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="woo-variation-gallery-slider-css" href="{{ asset('assets/css/slick.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" id="woo-variation-gallery-css" href="{{ asset('assets/css/frontend.min.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="brands-styles-css" href="{{ asset('assets/css/brands.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="font-awesome-css" href="{{ asset('assets/css/font-awesome.min.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="bootstrap-css" href="{{ asset('assets/css/bootstrap.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="sober-css" href="{{ asset('assets/css/style.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="soopf-css" href="{{ asset('assets/css/frontend.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" id="ywdpd_owl-css" href="{{ asset('assets/css/owl.carousel.min.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="yith_ywdpd_frontend-css" href="{{ asset('assets/css/frontend(1).css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="x-child-css" href="{{ asset('assets/css/style(1).css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="x-font-css" href="{{ asset('assets/css/st_font.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="animate-css" href="{{ asset('assets/css/animate.min.css') }}" type="text/css" media="all">
-    <link data-minify="1" rel="stylesheet" id="elementor-icons-css" href="{{ asset('assets/css/elementor-icons.min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-frontend-css" href="{{ asset('assets/css/frontend(1).min.css') }}" type="text/css" media="all">
-    <link rel="stylesheet" id="elementor-post-92085-css" href="{{ asset('assets/css/post-92085.css') }}" type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="dwas_styles-css" href="{{ asset('assets/css/devvn_dwas_style.css') }}"
+        type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="wcva-shop-frontend-css"
+        href="{{ asset('assets/css/shop-frontend.css') }}" type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="woocommerce-general-css" href="{{ asset('assets/css/woocommerce.css') }}"
+        type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="woo-variation-gallery-slider-css"
+        href="{{ asset('assets/css/slick.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="woo-variation-gallery-css" href="{{ asset('assets/css/frontend.min.css') }}"
+        type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="brands-styles-css" href="{{ asset('assets/css/brands.css') }}"
+        type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="font-awesome-css" href="{{ asset('assets/css/font-awesome.min.css') }}"
+        type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="bootstrap-css" href="{{ asset('assets/css/bootstrap.css') }}"
+        type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="sober-css" href="{{ asset('assets/css/style.css') }}" type="text/css"
+        media="all">
+    <link data-minify="1" rel="stylesheet" id="soopf-css" href="{{ asset('assets/css/frontend.css') }}" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="ywdpd_owl-css" href="{{ asset('assets/css/owl.carousel.min.css') }}" type="text/css"
+        media="all">
+    <link data-minify="1" rel="stylesheet" id="yith_ywdpd_frontend-css"
+        href="{{ asset('assets/css/frontend(1).css') }}" type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="x-child-css" href="{{ asset('assets/css/style(1).css') }}"
+        type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="x-font-css" href="{{ asset('assets/css/st_font.css') }}" type="text/css"
+        media="all">
+    <link data-minify="1" rel="stylesheet" id="animate-css" href="{{ asset('assets/css/animate.min.css') }}"
+        type="text/css" media="all">
+    <link data-minify="1" rel="stylesheet" id="elementor-icons-css"
+        href="{{ asset('assets/css/elementor-icons.min.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-frontend-css" href="{{ asset('assets/css/frontend(1).min.css') }}"
+        type="text/css" media="all">
+    <link rel="stylesheet" id="elementor-post-92085-css" href="{{ asset('assets/css/post-92085.css') }}"
+        type="text/css" media="all">
 
-    <link rel="icon" href="{{ asset('assets/images/cropped-48383776_2511245768892805_5554028974478196736_n-32x32.jpeg') }}" sizes="32x32">
-    <link rel="apple-touch-icon" href="{{ asset('assets/images/cropped-48383776_2511245768892805_5554028974478196736_n-180x180.jpeg') }}">
+    {{-- Global Styles --}}
+    <style>
+        body {
+            background: linear-gradient(to right, #e9f0f9, #f3f8ff);
+            min-height: 100vh;
+        }
 
-    <style id="sober-custom-css-vars">:root{--topbar-height: 40px;--header-height: 68px;}</style>
-    @stack('styles')
+        .card {
+            margin-top: 50px;
+            border-radius: 1rem;
+        }
+
+        .form-control:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, .25);
+        }
+
+        /* Style từ <style id="sober-custom-css-vars"> */
+        :root {
+            --topbar-height: 40px;
+            --header-height: 68px;
+        }
+    </style>
+
+    @stack('styles') {{-- Để các view con thêm CSS riêng --}}
 </head>
 
-<body class="home page-template page-template-elementor_header_footer page page-id-30293 theme-x woocommerce-js woo-variation-gallery woo-variation-gallery-theme-x woo-variation-gallery-pro sidebar-no-sidebar topbar-enabled topbar-light topbar-mobile-disabled header-v2 header-sticky header-sticky-normal header-white header-text-dark header-hoverable no-page-header page-header-style-normal page-title-hidden shop-hover-thumbnail product-quickview-enable blog-classic shop-navigation-links elementor-default elementor-template-full-width elementor-kit-92085 elementor-page elementor-page-30293 e--ua-blink e--ua-chrome e--ua-webkit" data-elementor-device-mode="desktop">
+{{-- Lớp CSS cho body từ website gốc --}}
+
+<body
+    class="home page-template page-template-elementor_header_footer page page-id-30293 theme-x woocommerce-js woo-variation-gallery woo-variation-gallery-theme-x woo-variation-gallery-pro sidebar-no-sidebar topbar-enabled topbar-light topbar-mobile-disabled header-v2 header-sticky header-sticky-normal header-white header-text-dark header-hoverable no-page-header page-header-style-normal page-title-hidden shop-hover-thumbnail product-quickview-enable blog-classic shop-navigation-links elementor-default elementor-template-full-width elementor-kit-92085 elementor-page elementor-page-30293 e--ua-blink e--ua-chrome e--ua-webkit"
+    data-elementor-device-mode="desktop">
 
     <div id="page" class="site">
 
+        {{-- Header của bạn (dùng component riêng) --}}
         @include('layouts.header')
 
+        {{-- Thanh điều hướng riêng của Auth, nếu bạn muốn giữ nó ở đây --}}
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="{{ route('home') }}">Trang chủ</a>
+                @auth
+                    <form method="POST" action="{{ route('logout') }}" class="ms-auto">
+                        @csrf
+                        <button class="btn btn-danger">Đăng xuất</button>
+                    </form>
+                @endauth
+            </div>
+        </nav>
+        {{-- Phần content chính của trang --}}
         <div id="content" class="site-content">
-            @yield('content')
+            <div class="container mt-4"> {{-- Thêm container/margin nếu bạn muốn --}}
+                @yield('content') {{-- CHỈ MỘT LẦN @yield('content') --}}
+            </div>
         </div>
 
+        {{-- Footer của bạn (dùng component riêng) --}}
         @include('layouts.footer')
 
-    </div><script src="{{ asset('assets/js/9ef240e8bb6f8ffb1b1a399d7794f3e5.js') }}" data-minify="1"></script>
-    <script data-no-minify="1" async="" src="{{ asset('assets/js/lazyload.min.js') }}"></script>
-    @stack('scripts')
+    </div>
 
+    {{-- Các JavaScript files của bạn --}}
+    <script async="" src="{{ asset('assets/js/js') }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-N5K4FJFXWR');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> {{-- Bootstrap JS --}}
+    <script src="{{ asset('assets/js/9ef240e8bb6f8ffb1b1a399d7794f3e5.js') }}" data-minify="1"></script>
+    <script data-no-minify="1" async="" src="{{ asset('assets/js/lazyload.min.js') }}"></script>
+
+    @stack('scripts') {{-- Để các view con thêm JS riêng --}}
 </body>
+
 </html>

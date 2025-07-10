@@ -378,68 +378,6 @@
                 <div class="elementor-container elementor-column-gap-no">
                     <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-36c54c6c"
                         data-id="36c54c6c" data-element_type="column">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-25b70efe elementor-drop-cap-yes elementor-drop-cap-view-default elementor-widget elementor-widget-text-editor"
-                                data-id="25b70efe" data-element_type="widget"
-                                data-settings="{&quot;drop_cap&quot;:&quot;yes&quot;}"
-                                data-widget_type="text-editor.default">
-                                <div class="elementor-widget-container">
-                                    <div class="_2cuy _3dgx _2vxa">Hơn 10 năm phát triển, XSHOP luôn mang đến những mẫu
-                                        giày chất lượng tốt nhất với giá cả hợp lí nhất đến tay người tiêu dùng với hệ thống
-                                        cửa hàng Số 1 Hà Nội và bán online khắp Việt Nam.</div>
-                                </div>
-                                <div class="elementor-element elementor-element-237901de elementor-widget elementor-widget-counter"
-                                    data-id="237901de" data-element_type="widget" data-widget_type="counter.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-counter">
-                                            <div class="elementor-counter-title">Số Sản Phẩm Đã Bán</div>
-                                            <div class="elementor-counter-number-wrapper">
-                                                <span class="elementor-counter-number-prefix"></span>
-                                                <span class="elementor-counter-number" data-duration="2000"
-                                                    data-to-value="1349841" data-from-value="2" data-delimiter=" ">
-                                                    {{ $totalQuantity }}</span>
-                                                <span class="elementor-counter-number-suffix"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-538e7150 elementor-widget elementor-widget-counter"
-                                    data-id="538e7150" data-element_type="widget" data-widget_type="counter.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-counter">
-                                            <div class="elementor-counter-title">Khách Hàng Đã Mua</div>
-                                            <div class="elementor-counter-number-wrapper">
-                                                <span class="elementor-counter-number-prefix"></span>
-                                                <span class="elementor-counter-number" data-duration="2000"
-                                                    data-to-value="567392" data-from-value="0"
-                                                    data-delimiter=" ">{{ $totalCustomers }}</span>
-                                                <span class="elementor-counter-number-suffix"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5e9aee59"
-                            data-id="5e9aee59" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-6142beaa elementor-widget elementor-widget-video"
-                                    data-id="6142beaa" data-element_type="widget"
-                                    data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/www.youtube.com\/watch?v=a1ILAowCiOw&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;mute&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;}"
-                                    data-widget_type="video.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="elementor-wrapper elementor-open-inline">
-                                            <iframe class="elementor-video" frameborder="0" allowfullscreen=""
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                referrerpolicy="strict-origin-when-cross-origin"
-                                                title="Cửa hàng giày XSHOP" width="640" height="360"
-                                                src="https://www.youtube.com/embed/a1ILAowCiOw?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;cc_load_policy=0&amp;autoplay=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fgiayxshop.vn&amp;widgetid=1&amp;forigin=https%3A%2F%2Fgiayxshop.vn%2F&amp;aoriginsup=1&amp;vf=1"
-                                                id="widget2"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
             </section>
             <!-- Tin tức mới nhất -->

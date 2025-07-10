@@ -17,8 +17,6 @@ return new class extends Migration
             $table->unsignedInteger('variant_id'); // Khóa ngoại
             $table->integer('quantity')->default(1);
             $table->decimal('price_at_addition', 10, 2);
-            // Không cần timestamps cho cart_items
-
             $table->foreign('cart_id')->references('cart_id')->on('carts')->onDelete('cascade');
             $table->foreign('variant_id')->references('variant_id')->on('product_variants')->onDelete('cascade');
         });

@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('carts', function (Blueprint $table) {
             $table->increments('cart_id'); // Khóa chính tự tăng
-            $table->unsignedInteger('user_id')->nullable(); // Khóa ngoại, có thể NULL cho khách vãng lai
+            $table->unsignedBigInteger('user_id')->nullable(); // Khóa ngoại, có thể NULL cho khách vãng lai
             $table->timestamps(); // Tạo created_at và updated_at
-
-            $table->foreign('user_id')->references('user_id')->on('users')->onDelete('set null');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
         });
     }
 

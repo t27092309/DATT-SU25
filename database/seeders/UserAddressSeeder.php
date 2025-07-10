@@ -14,8 +14,9 @@ class UserAddressSeeder extends Seeder
      */
     public function run(): void
     {
-        $johnDoeId = DB::table('users')->where('email', 'john.doe@example.com')->first()->user_id;
-        $janeSmithId = DB::table('users')->where('email', 'jane.smith@example.com')->first()->user_id;
+        // Fetch user IDs using the correct primary key column 'id'
+        $johnDoeId = DB::table('users')->where('email', 'john.doe@example.com')->first()->id; // Changed to ->id
+        $janeSmithId = DB::table('users')->where('email', 'jane.smith@example.com')->first()->id; // Changed to ->id
 
         DB::table('user_addresses')->insert([
             [
