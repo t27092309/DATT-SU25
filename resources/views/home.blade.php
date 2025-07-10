@@ -186,10 +186,8 @@
                                                     <div class="product-header"> <a
                                                             href="{{ route('product.detail', [$product->slug]) }}"
                                                             class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img
-                                                                decoding="async" width="300" height="300"
-                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded"
-                                                                alt="" data-lazy-srcset="{{ $product->image }}"
-                                                                sizes="(max-width: 300px) 100vw, 300px" /></noscript><span
+                                                                src="{{ Storage::url($product->image_url) }}"
+                                                                alt=""><span
                                                                 class="ribbons woocommerce-badges"><span
                                                                     class="onsale woocommerce-badge ribbon">35%</span></span></a>
 
@@ -291,15 +289,15 @@
                                                 <li
                                                     class="layout-style-2 col-md-4 col-sm-4 col-xs-6 col-lg-3 product-style-quickview product type-product post-78199 status-publish first instock product_cat-giay-nam product_cat-giay-nike product_cat-nike-jordan has-post-thumbnail sale shipping-taxable purchasable product-type-variable has-default-attributes woo-variation-gallery-product">
                                                     <!-- Gắn link product detail để trỏ sang trang chi tiết -->
-                                                    <div class="product-header"> <a
-                                                            href="{{ route('product.detail', [$product->slug]) }}"
+                                                    <div class="product-header">
+                                                        <a href="{{ route('product.detail', [$product->slug]) }}"
                                                             class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img
-                                                                decoding="async" width="300" height="300"
-                                                                class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail entered lazyloaded"
-                                                                alt="" data-lazy-srcset="{{ $product->image }}"
-                                                                sizes="(max-width: 300px) 100vw, 300px" /></noscript><span
-                                                                class="ribbons woocommerce-badges"><span
-                                                                    class="onsale woocommerce-badge ribbon">35%</span></span></a>
+                                                                src="{{ Storage::url($product->image_url) }}"
+                                                                alt="">
+                                                            <span class="ribbons woocommerce-badges"><span
+                                                                    class="onsale woocommerce-badge ribbon">35%</span>
+                                                            </span>
+                                                        </a>
 
                                                         <div class="buttons-icon">
                                                         </div>
@@ -332,10 +330,11 @@
                                                     </div>
                                                     <!-- thông tin sản phẩm -->
                                                     <div class="shopswatchinput" prod-img="">
-                                                        <a class="wcvaswatchinput" data-o-src="{{ $product->image }}">
-                                                            <div data-bg="{{ $product->image }}"
+                                                        <a class="wcvaswatchinput"
+                                                            data-o-src="{{ $product->image_url }}">
+                                                            <div data-bg="{{ $product->image_url }}"
                                                                 class="wcvashopswatchlabel wcvasquare rocket-lazyload entered exited lazyloaded"
-                                                                style="background-size: cover; float: left; width: 40px; height: 40px; background-image: url(&quot;https://giayxshop.vn/wp-content/uploads/2023/11/z5490803329093_c996ec50b6b04958fdbc984bb3209c2b-150x150.jpg&quot;);"
+                                                                style="background-size: cover; float: left; width: 40px; height: 40px;"
                                                                 data-ll-status="loaded"></div>
                                                         </a>
                                                     </div>
@@ -439,38 +438,38 @@
             <!-- Map các cơ sở của cửa hàng -->
 
             <!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-42180f2e elementor-section-content-middle elementor-section-stretched elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle animated zoomIn" data-id="42180f2e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;animation&quot;:&quot;zoomIn&quot;}" style="width: 960px; left: -120px;">
-                                    <div class="elementor-background-overlay"></div>
-                                    <div class="elementor-container elementor-column-gap-no">
-                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4b1157ac" data-id="4b1157ac" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-c76ff6f elementor-widget elementor-widget-heading" data-id="c76ff6f" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h4 class="elementor-heading-title elementor-size-default"><a href="https://giayxshop.vn/he-thong-cua-hang-xshop/">Hệ thống cửa hàng XSHOP</a></h4>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-2bae783e elementor-widget elementor-widget-heading" data-id="2bae783e" data-element_type="widget" data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <h5 class="elementor-heading-title elementor-size-default"><a href="https://giayxshop.vn/he-thong-cua-hang-xshop/">Xem ngay hệ thống XSHOP</a></h5>
-                                                    </div>
-                                                </div>
-                                                <div class="elementor-element elementor-element-2c59e20d elementor-button-warning elementor-align-center elementor-widget elementor-widget-button" data-id="2c59e20d" data-element_type="widget" data-widget_type="button.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="elementor-button-wrapper">
-                                                            <a class="elementor-button elementor-button-link elementor-size-md" href="https://giayxshop.vn/he-thong-cua-hang-xshop/" target="_blank">
-                                                                <span class="elementor-button-content-wrapper">
-                                                                    <span class="elementor-button-icon">
-                                                                        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
-                                                                    </span>
-                                                                    <span class="elementor-button-text">Xem Ngay</span>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section> -->
+                                                            <div class="elementor-background-overlay"></div>
+                                                            <div class="elementor-container elementor-column-gap-no">
+                                                                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4b1157ac" data-id="4b1157ac" data-element_type="column">
+                                                                    <div class="elementor-widget-wrap elementor-element-populated">
+                                                                        <div class="elementor-element elementor-element-c76ff6f elementor-widget elementor-widget-heading" data-id="c76ff6f" data-element_type="widget" data-widget_type="heading.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <h4 class="elementor-heading-title elementor-size-default"><a href="https://giayxshop.vn/he-thong-cua-hang-xshop/">Hệ thống cửa hàng XSHOP</a></h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="elementor-element elementor-element-2bae783e elementor-widget elementor-widget-heading" data-id="2bae783e" data-element_type="widget" data-widget_type="heading.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <h5 class="elementor-heading-title elementor-size-default"><a href="https://giayxshop.vn/he-thong-cua-hang-xshop/">Xem ngay hệ thống XSHOP</a></h5>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="elementor-element elementor-element-2c59e20d elementor-button-warning elementor-align-center elementor-widget elementor-widget-button" data-id="2c59e20d" data-element_type="widget" data-widget_type="button.default">
+                                                                            <div class="elementor-widget-container">
+                                                                                <div class="elementor-button-wrapper">
+                                                                                    <a class="elementor-button elementor-button-link elementor-size-md" href="https://giayxshop.vn/he-thong-cua-hang-xshop/" target="_blank">
+                                                                                        <span class="elementor-button-content-wrapper">
+                                                                                            <span class="elementor-button-icon">
+                                                                                                <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                                                            </span>
+                                                                                            <span class="elementor-button-text">Xem Ngay</span>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section> -->
         </div>
     </div>
     </div>
