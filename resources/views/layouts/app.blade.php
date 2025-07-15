@@ -98,15 +98,7 @@
 
         {{-- Thanh điều hướng riêng của Auth, nếu bạn muốn giữ nó ở đây --}}
         <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="{{ route('home') }}">Trang chủ</a>
-                @auth
-                    <form method="POST" action="{{ route('logout') }}" class="ms-auto">
-                        @csrf
-                        <button class="btn btn-danger">Đăng xuất</button>
-                    </form>
-                @endauth
-            </div>
+
         </nav>
         {{-- Phần content chính của trang --}}
         <div id="content" class="site-content">
