@@ -14,26 +14,23 @@ class User extends Authenticatable
     protected $primaryKey = 'user_id'; // vì bạn dùng user_id làm khóa chính
     public $timestamps = false; // vì không có created_at, updated_at
 
-    protected $fillable = [
-        'username',
-        'email',
-        'password_hash',
-        'first_name',
-        'last_name',
-        'phone_number',
-        'role',
-    ];
+   protected $fillable = [
+    'username',
+    'email',
+    'password',
+    'first_name',
+    'last_name',
+    'phone_number',
+    'role',
+];
 
-    protected $hidden = [
-        'password_hash',
-    ];
+protected $hidden = [
+    'password',
+];
 
-    /**
-     * Laravel sẽ gọi phương thức này để xác thực mật khẩu.
-     * Mặc định nó dùng 'password', nhưng bạn đang dùng 'password_hash'.
-     */
-    public function getAuthPassword()
-    {
-        return $this->password_hash;
-    }
+public function getAuthPassword()
+{
+    return $this->password;
+}
+
 }
