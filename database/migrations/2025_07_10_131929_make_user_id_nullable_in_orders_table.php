@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('categories', function (Blueprint $table) {
-            $table->increments('category_id'); // Khóa chính tự tăng
-            $table->string('name')->unique(); // Tên danh mục, phải là duy nhất
-            $table->string('slug')->unique();
+        Schema::table('orders', function (Blueprint $table) {
+
+            $table->unsignedBigInteger('user_id')->nullable()->change();
+
         });
     }
 
@@ -23,6 +23,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('categories');
+        Schema::table('orders', function (Blueprint $table) {
+            $table->unsignedBigInteger('user_id')->nullable(false)->change();
+        });
     }
 };

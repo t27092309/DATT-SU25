@@ -12,15 +12,26 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('payments', function (Blueprint $table) {
-            $table->increments('payment_id'); // Khóa chính tự tăng
-            $table->unsignedInteger('order_id'); // Khóa ngoại
+            // Thay thế: $table->increments('payment_id');
+            // Bằng:
+            $table->id('payment_id'); // Khóa chính sẽ là BIGINT UNSIGNED (chuẩn Laravel)
+                                      // Hoặc $table->bigIncrements('payment_id');
+
+            // Thay thế: $table->unsignedInteger('order_id');
+            // Bằng:
+            $table->foreignId('order_id') // Khóa ngoại sẽ là BIGINT UNSIGNED
+                  ->constrained('orders', 'order_id') // Tham chiếu tới cột 'order_id' trong bảng 'orders'
+                  ->onDelete('cascade'); // Tùy chọn: Khi một order bị xóa, các payment liên quan cũng sẽ bị xóa.
+                                          // Hoặc onUpdate/onDelete khác tùy logic nghiệp vụ của bạn.
+
             $table->string('transaction_id')->unique()->nullable(); // ID giao dịch từ cổng thanh toán
             $table->decimal('amount', 10, 2);
-            $table->timestamp('payment_date')->useCurrent();
+            $table->timestamp('payment_date')->useCurrent(); // Thời điểm thanh toán
             $table->string('payment_status'); // Ví dụ: 'Success', 'Failed', 'Pending'
-            $table->text('payment_method_details')->nullable();
+            $table->text('payment_method_details')->nullable(); // Chi tiết phương thức thanh toán (JSON/text)
 
-            $table->foreign('order_id')->references('order_id')->on('orders');
+            // Khuyến nghị: Thêm timestamps cho bảng payments để theo dõi thời gian tạo/cập nhật
+            $table->timestamps();
         });
     }
 
